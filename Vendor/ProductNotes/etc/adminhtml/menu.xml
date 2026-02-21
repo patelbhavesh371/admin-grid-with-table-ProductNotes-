@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+        <add id="Vendor_ProductNotes::productnotes"
+             title="Customer Product Note"
+             module="Vendor_ProductNotes"
+             sortOrder="10"
+             parent="Magento_Catalog::catalog"
+             action="vendor_productnotes/productnotes/index"
+             resource="Vendor_ProductNotes::productnotes"/>
+    </menu>
+</config>
