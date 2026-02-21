@@ -3,6 +3,7 @@
 
 **Vendor_ProductNotes Module**
 Project Title: Product Notes Management Module
+
 **Objective**
 Develop a Magento 2 custom module named Vendor_ProductNotes that allows admin users to create and manage notes related to products. The module includes database design, admin UI, REST API exposure, and ACL permissions.
 Features
