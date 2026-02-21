@@ -6,9 +6,11 @@ Project Title: Product Notes Management Module
 
 **Objective**
 Develop a Magento 2 custom module named Vendor_ProductNotes that allows admin users to create and manage notes related to products. The module includes database design, admin UI, REST API exposure, and ACL permissions.
+
 Features
+
     1. Admin Menu
-        ◦ Location: Admin → Catalog → Product Notes
+            ◦ Location: Admin → Catalog → Product Notes
         ◦ Manage all product notes from a dedicated admin section.
     2. Admin Grid
         ◦ Columns:
@@ -30,15 +32,15 @@ Features
     5. REST API Endpoint
         ◦ GET /rest/V1/productnotes/:productId
         ◦ Example Response:
-{
-  "product_id": 3,
-  "notes": [
-    {
-      "title": "title1",
-      "details": "details1"
-    }
-  ]
-}
+                {
+                  "product_id": 3,
+                  "notes": [
+                    {
+                      "title": "title1",
+                      "details": "details1"
+                    }
+                  ]
+                }
     6. Access Control List (ACL)
         ◦ Permissions:
             ▪ Vendor_ProductNotes::notes → View product notes
@@ -47,15 +49,16 @@ Features
     7. Database Schema
         ◦ Table: vendor_productnotes_productnotes
         ◦ Columns:
-Column              Type                Description
-note_id         INT, PK, AI      Unique ID for each note
-product_id      INT              Related product entity ID
-note_title      VARCHAR(255)     Short title of the note
-note_details    TEXT             Detailed note description
-created_at      TIMESTAMP        Timestamp when the note was created
+            Column              Type                Description
+            note_id         INT, PK, AI      Unique ID for each note
+            product_id      INT              Related product entity ID
+            note_title      VARCHAR(255)     Short title of the note
+            note_details    TEXT             Detailed note description
+            created_at      TIMESTAMP        Timestamp when the note was created
 
 
 Usage
+
     1. Admin Panel
         ◦ Navigate to Catalog → Product Notes.
         ◦ Add a new note using the form.
